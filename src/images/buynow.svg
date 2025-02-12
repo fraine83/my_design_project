@@ -1,0 +1,17 @@
+<!-- This is an SVG sprite that we added in its entirety and hidden visually. -->
+<svg aria-hidden="true" style="position:absolute;width:0;height:0" xmlns="http://www.w3.org/2000/svg" overflow="hidden">
+    <defs>
+       <symbol id="buynowclose" viewBox="0 0 28 28">
+           <path d="M21 7 7 21M7 7l14 14"/>
+        </symbol>
+        <symbol id="buynowflag" viewBox="0 0 32 24">
+            <path fill="gold" d="M31.832 1.058H.242v23.509h31.59V1.058Z"/>
+            <path fill="#0057B7" fill-rule="evenodd" d="M.243 1.058h31.589v11.754H.242V1.058Z" clip-rule="evenodd"/>
+        </symbol>
+        <symbol id="buynowcard" viewBox="0 0 30 18">
+           <path fill="#ED0006" d="M16 16.834a9.083 9.083 0 0 1-5.935 2.199c-5.054 0-9.15-4.12-9.15-9.204 0-5.083 4.096-9.204 9.15-9.204 2.264 0 4.337.828 5.935 2.199A9.083 9.083 0 0 1 21.935.625c5.054 0 9.15 4.12 9.15 9.204 0 5.083-4.096 9.204-9.15 9.204A9.083 9.083 0 0 1 16 16.834Z"/>
+            <path fill="#F9A000" d="M16 16.834a9.206 9.206 0 0 0 3.215-7.005A9.206 9.206 0 0 0 16 2.824 9.083 9.083 0 0 1 21.935.625c5.054 0 9.15 4.12 9.15 9.204 0 5.083-4.096 9.204-9.15 9.204A9.083 9.083 0 0 1 16 16.834Z"/>
+            <path fill="#FF5E00" d="M16 16.834a9.206 9.206 0 0 0 3.215-7.005A9.206 9.206 0 0 0 16 2.824a9.206 9.206 0 0 0-3.215 7.005A9.205 9.205 0 0 0 16 16.834Z"/>
+        </symbol>
+    </defs>
+</svg>

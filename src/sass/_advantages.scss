@@ -1,0 +1,145 @@
+/* varaiables */
+:root {
+  --primarycolor: #1e1823;
+  --orange: #fd9222;
+  --whitecolor: #fff;
+}
+
+/* CSS Reset */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/* ADVANTAGES section */
+.advantages {
+  // width: 100%;
+  // margin: 0 auto;
+  padding: 0;
+  background: var(--primarycolor);
+
+  // @media screen and (min-width: 768px) {
+  //   width: 768px;
+  //   padding: 50px 32px;
+  // }
+
+  // @media screen and (min-width: 1200px) {
+  //   width: 1200px;
+  //   padding: 50px;
+  // }
+}
+
+.advantages-container {
+  min-width: 375px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding: 50px 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    padding: 50px;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.advantages-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  gap: 10px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-left: 5px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: -36px;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0;
+  }
+}
+
+.advantages-item {
+  margin-left: -36px;
+  border-radius: 4px;
+  width: 308px;
+  height: 226px;
+  padding-right: 28px;
+
+  @media screen and (min-width: 1200px) {
+    height: 244px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 36px;
+    padding-right: 0;
+  }
+}
+
+.advantages-svg-box {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.advantages-title {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 18px;
+  width: 308px;
+}
+
+.advantages-description {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  width: 308px;
+}
+
+.advantages-icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.vl {
+  visibility: hidden;
+
+  @media screen and (min-width: 1200px) {
+    visibility: visible;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    height: 124px;
+    margin-top: 65px;
+  }
+}

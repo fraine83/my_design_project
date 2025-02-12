@@ -1,0 +1,305 @@
+.hero {
+  margin-bottom: 71px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 72px;
+  }
+}
+
+.hero-container {
+  width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+    padding: 0 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 1200px;
+  }
+}
+
+.hero-bg {
+  padding: 395px 20px 21px;
+  margin: 0 auto;
+  border-radius: 40px;
+  background: linear-gradient(
+    to bottom,
+    rgba(17, 17, 17, 1),
+    rgba(17, 17, 17, 0.4)
+  );
+  background-image: linear-gradient(
+      to bottom,
+      rgba(17, 17, 17, 0) 0%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url(../images/hero-m.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (min-width: 768px) {
+    background-image: unset;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(../images/hero-m@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 671px;
+    background: linear-gradient(
+      to bottom,
+      rgba(17, 17, 17, 1),
+      rgba(17, 17, 17, 0.4)
+    );
+    background-image: linear-gradient(
+        to bottom,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(../images/hero-t.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(17, 17, 17, 0) 0%,
+          rgba(17, 17, 17, 0.4) 100%
+        ),
+        url(../images/hero-t@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 381px 40px 40px 40px;
+    background: linear-gradient(
+      to bottom,
+      rgba(17, 17, 17, 1),
+      rgba(17, 17, 17, 0.4)
+    );
+    background-image: linear-gradient(
+        to bottom,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(../images/hero-d.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(17, 17, 17, 0) 0%,
+          rgba(17, 17, 17, 0.4) 100%
+        ),
+        url(../images/hero-d@2x.jpg);
+    }
+  }
+}
+
+.hide {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.hero-title {
+  width: 100%;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.6px;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    width: 484px;
+    height: 102px;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.84px;
+  }
+}
+
+.hero-button {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.scroll-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.scroll-text {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: -0.36px;
+  color: var(--white);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.42px;
+  }
+}
+
+.button-wrapper {
+  font-family: 'Montserrat';
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+
+.buy-button {
+  color: var(--white);
+  background-color: var(--orange);
+  padding: 12px 20px;
+  border-radius: 100px;
+  margin-right: 14px;
+  border-color: transparent;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1200px) {
+    padding: 14px 40px;
+  }
+}
+
+.buy-button:hover,
+.buy-button:focus {
+  color: var(--orange);
+  background-color: #fcf1e0;
+}
+
+.made-button {
+  color: var(--white);
+  background-color: transparent;
+  padding: 12px 28px;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    padding: 14px 40px;
+  }
+}
+
+.made-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.made-button:hover,
+.made-button:focus {
+  color: var(--orange);
+  border: 1px solid var(--orange);
+}
+
+.scroll-button {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--orange);
+  background: #fff;
+  border-color: transparent;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.scroll-icon {
+  width: 16px;
+  height: 16px;
+  fill: var(--orange);
+
+  @media screen and (min-width: 768px) {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.scroll-wrapper {
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-wrapper:hover,
+.scroll-wrapper:focus {
+  .scroll-text {
+    color: var(--orange);
+  }
+  .scroll-button {
+    background: var(--orange);
+  }
+  .scroll-icon {
+    fill: var(--white);
+  }
+}

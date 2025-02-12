@@ -1,0 +1,70 @@
+/* CSS Variable */
+:root {
+  --headerblack: #111;
+  --white: #fff;
+  --benefit-description: rgba(255, 255, 255, 0.7);
+  --orange: #fd9222;
+  --reviews-text: rgba(17, 17, 17, 0.7);
+  --off-white: #fafafa;
+}
+
+/* CSS RESET */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background-color: var(--off-white);
+}
+
+.header-container {
+  min-width: 375px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
