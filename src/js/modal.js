@@ -34,7 +34,7 @@
 
   // Function to handle modal closing
   const closeModal = (event) => {
-    const modal = event.currentTarget.closest(".modal, .login, .review, .buynow, .buy-now-2, .subscribe");
+    const modal = event.currentTarget.closest(".modal, .login, .review, .buynow, .buynow2, .subscribe");
     if (modal) {
       modal.classList.add("is-hidden"); // Hide the modal
     }
@@ -42,19 +42,19 @@
 
   // Function to close modal when clicking outside the modal content
   const closeModalOnOutsideClick = (event) => {
-    if (event.target.classList.contains("modal") || event.target.classList.contains("login") || event.target.classList.contains("review") || event.target.classList.contains("buynow") || event.target.classList.contains("buy-now-2") || event.target.classList.contains("subscribe")) {
+    if (event.target.classList.contains("modal") || event.target.classList.contains("login") || event.target.classList.contains("review") || event.target.classList.contains("buynow") || event.target.classList.contains("buynow2") || event.target.classList.contains("subscribe")) {
       event.target.classList.add("is-hidden");
     }
   };
 
   // Find all modal trigger buttons and attach event listeners
-  const modalTriggers = document.querySelectorAll("[data-login-open], [data-buynow-open], [data-buynow-2-open], [data-review-open], [data-subscribe-open]");
+  const modalTriggers = document.querySelectorAll("[data-login-open], [data-buynow-open], [data-buynow2-open], [data-review-open], [data-subscribe-open]");
   modalTriggers.forEach(trigger => {
     trigger.addEventListener("click", openModal);
   });
 
   // Find all close buttons inside modals and attach event listeners
-  const closeButtons = document.querySelectorAll("[data-login-close], [data-buynow-close], [data-buynow-2-close], [data-review-close], [data-subscribe-close]");
+  const closeButtons = document.querySelectorAll("[data-login-close], [data-buynow-close], [data-buynow2-close], [data-review-close], [data-subscribe-close]");
   closeButtons.forEach(button => {
     button.addEventListener("click", closeModal);
   });
