@@ -1,4 +1,4 @@
-.buynow {
+.modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -40,7 +40,7 @@
   }
 }
 
-.buynow.hidden .buynow-modal {
+.buynow.is-hidden .buynow-modal {
   transform: translate(-50%, -50%) scale(0);
 }
 

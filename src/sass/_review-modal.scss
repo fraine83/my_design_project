@@ -40,11 +40,11 @@
   }
 }
 
-.review.hidden .review-modal {
+.review.is-hidden .review-modal {
   transform: translate(-50%, -50%) scale(0);
 }
 
-.hidden-2 {
+.is-hidden {
   visibility: none;
   opacity: 0;
   pointer-events: none;
