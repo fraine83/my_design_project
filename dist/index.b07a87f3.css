@@ -131,6 +131,10 @@ summary {
   }
 }
 
+.header-container .menu-icon {
+  margin-left: 460px;
+}
+
 .page-header {
   margin-top: 20px;
   margin-bottom: 14px;
