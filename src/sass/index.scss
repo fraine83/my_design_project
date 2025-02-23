@@ -1,6 +1,7 @@
 @use './generalstyles';
 @use './common';
 @use './example';
+@use './landing.scss';
 @use './header';
 @use './hero';
 @use './advantages';
@@ -17,3 +18,5 @@
 @use './subscribe-modal';
 @use './login.scss';
 @use './buynow2-modal.scss';
+@use './signup.scss';
+

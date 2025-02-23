@@ -12,19 +12,97 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
 
     <link rel="stylesheet" href="/index.b07a87f3.css">
-    
-    
-    <script src="/index.c86c5a31.js" defer=""></script>
-    <script src="/index.e82f28a0.js" defer=""></script>
-    <script src="/index.69fd9481.js" defer=""></script>
-    <script src="/index.f9b3b06b.js" defer=""></script>
-    
-   
+    <script src="/index.975ef6c8.js" defer=""></script>
   </head>
   <body>
-    <!-- ❗❗❗ Add partials like so for every page -->
-    <!-- <include src="./partials/example.html"></include> -->
-     
+    <div class="landing-page">
+    <header class="landing-header">
+        <div class="logo">Simply Chocolate</div>
+        <form id="loginForm" class="login-form">
+            <input type="email" placeholder="Email" required="">
+            <input type="password" placeholder="Password" required="">
+            <button type="submit"><p class="sign">Sign In</p></button>
+            <label><input type="checkbox"> Keep me signed in</label>
+            <a href="#" class="forgot-password">Forgot password?</a>
+        </form>
+    </header>
+    
+    <section class="hero">
+        <h1>The Network for Chocolate Lovers</h1>
+        <p>Join us and indulge in the finest chocolates worldwide!</p>
+        <p>We've freshly made it for you!!!</p>
+        <button class="signup-link" data-signup-open="">Sign Up</button>
+    </section>
+</div>
+
+    <div class="signup is-hidden" data-signup=""> 
+    <div class="modal-content">
+        <span class="close-btn" data-signup-close="">&times;</span> 
+        <h2>Create Your Account</h2>
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" required="">
+            </div>
+            <div class="form-group">
+                <label for="signupEmail">Email:</label>
+                <input type="email" id="signupEmail" required="">
+            </div>
+            <div class="form-group">
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" required="">
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" required="">
+            </div>
+            <div class="form-group">
+                <label class="checkbox-container">
+                    <input type="checkbox" id="terms" required="">
+                    I agree to the Terms and Privacy Policy
+                </label>
+            </div>
+            <button type="submit" class="submit-btn">Create Account</button>
+            <div class="form-footer">
+                <span>Already have an account?</span>
+                <a href="#" class="login-btn link" data-login-open="">Log In Instead</a>
+            </div>
+        </form>
+    </div>
+</div>
+    
+<div class="login is-hidden" data-login=""> 
+    <div class="modal-content">
+      <span class="close-btn" data-login-close="">&times;</span> 
+      <h2>Login to Simply Chocolate</h2>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required="">
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" required="">
+        </div>
+        <div class="form-group">
+          <label class="checkbox-container">
+            <input type="checkbox" id="remember">
+            Remember me
+          </label>
+        </div>
+        <button type="submit" class="submit-btn">Sign In</button>
+        <div class="form-footer">
+          <a href="#" class="forgot-password">Forgot Password?</a>
+          <a href="#" class="signup-link" data-signup-open="">Sign Up</a>
+        </div>
+      </form>
+    </div>
+  </div> 
+
+
+
+    <div id="main-content" class="is-hidden">
+         
 <header class="page-header">
   <div class="header-container">
     <nav class="navigation">
@@ -46,14 +124,14 @@
         <li class="item">
           <a class="link" href="#chocolate-id">Chocolate is loved</a>
         </li>
-        <li class="item">
-          <button class="login-btn link" data-login-open="">
+        <!-- <li class="item">
+          <button class="login-btn link" data-login-open>
             <svg width="24" height="24" class="login-icon">
-              <use href="/header.4449b2c9.svg#user-icon"></use>
+              <use href="./images/header.svg#user-icon"></use>
             </svg>
             Login
           </button>
-        </li>
+        </li> -->
       </ul>
 
 
@@ -120,35 +198,7 @@
     </div>
   </nav></div>
 </header>
-    
-<div class="login is-hidden" data-login=""> 
-    <div class="modal-content">
-      <span class="close-btn" data-login-close="">&times;</span> 
-      <h2>Login to Simply Chocolate</h2>
-      <form id="loginForm">
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" required="">
-        </div>
-        <div class="form-group">
-          <label for="password">Password:</label>
-          <input type="password" id="password" required="">
-        </div>
-        <div class="form-group">
-          <label class="checkbox-container">
-            <input type="checkbox" id="remember">
-            Remember me
-          </label>
-        </div>
-        <button type="submit" class="submit-btn">Sign In</button>
-        <div class="form-footer">
-          <a href="#" class="forgot-password">Forgot Password?</a>
-          <a href="#" class="signup-link">Sign Up</a>
-        </div>
-      </form>
-    </div>
-  </div>
-    <section class="hero">
+        <section class="hero">
   <div class="hero-container">
     <div class="hero-bg">
       <h2 class="hide">Hero Section</h2>
@@ -183,7 +233,7 @@
   </div>
 </section>
 
-     
+         
 <section class="advantages">
   <div class="advantages-container">
     <h2 class="hide">Advantages</h2>
@@ -241,7 +291,7 @@
   </div>
 </section>
 
-     <section class="unique">
+         <section class="unique">
   <div class="unique-container">
     <h2 class="unique-section-title first-section-title">
       IT ALL ADDS UP TO ONE EXCEPTIONAL <span>TASTE</span> SENSATION
@@ -363,7 +413,7 @@
   </div>
 </section>
 
-    <section class="howitsmade-second-section" id="howitsmade__id">
+        <section class="howitsmade-second-section" id="howitsmade__id">
   <div class="howitsmade-container">
     <h2 class="section-title howitsmade-section-title">
       How it's <span>made</span>
@@ -397,7 +447,7 @@
   </div>
 </section>
 
-    <section class="products-section" id="ourproducts__id">
+        <section class="products-section" id="ourproducts__id">
   <div class="products-container">
     <h2 class="products-title">Our <span>Products</span></h2>
 
@@ -520,7 +570,7 @@
 
 <script src="/index.f10b52d7.js"></script>
 <script src="/index.09c24910.js"></script>
-     <!--top-sellers section-->
+         <!--top-sellers section-->
 <section class="top-sellers-container" id="top_sellers">
   <div class="top-sellers">
     <h2 class="top-sellers-title">
@@ -558,7 +608,7 @@
 </section>
 <!-- <script type="module" src="./js/buynow-2.js"></script> -->
 
-    <section class="chocoisloved-section" id="chocolate-id">
+        <section class="chocoisloved-section" id="chocolate-id">
     <div class="swiper reviewSwiper reviews-container">
         <h2 class="products-title">
             CHOCOLATE <span>IS LOVED</span>
@@ -704,7 +754,7 @@
 <script src="/index.09c24910.js">
 </script>
 
-    <!--Subscriber Section-->
+        <!--Subscriber Section-->
 <section class="herosub">
   <div class="subscribe-container">
     <h1 class="subhero-title">
@@ -721,7 +771,7 @@
   </div>
 </section>
 
-     
+         
 <section class="footer" id="footer-id">
   <div class="footer-container">
     <!--footer main-->
@@ -785,7 +835,7 @@
     </ul>
   </div>
 </section>
-     
+         
 <div class="buynow is-hidden" data-buynow="">
   <div class="buynow-modal">
     <button type="button" class="buynow-close" data-buynow-close="">
@@ -845,7 +895,7 @@
   </div>
 </div>
 
-     
+         
 <div class="buynow2 is-hidden" data-buynow2="">
     <div class="buynow2-modal">
       <button type="button" class="buynow2-close" data-buynow2-close="">
@@ -905,7 +955,7 @@
     </div>
   </div>
   
-     <div class="review is-hidden" data-review="">
+         <div class="review is-hidden" data-review="">
   <div class="review-modal">
     <button type="button" class="review-close" data-review-close="">
       <svg class="review-icon" width="28" height="28">
@@ -941,7 +991,7 @@
   </div>
 </div>
 
-    <div class="subscribe is-hidden" data-subscribe="">
+        <div class="subscribe is-hidden" data-subscribe="">
   <div class="subscribe-modal">
     <button class="subscribe-modal-close" data-subscribe-close="">
       <svg class="modal-close-icon" width="28" height="28">
@@ -969,8 +1019,11 @@
     </div>
   </div>
 </div>
-
-
-   
+ 
+  </div>
+    <script src="/index.f9b3b06b.js" defer=""></script>
+    <script src="/index.c86c5a31.js" defer=""></script>
+    <script src="/index.e82f28a0.js" defer=""></script>
+    <script src="/index.69fd9481.js" defer=""></script>
   </body>
 </html>
