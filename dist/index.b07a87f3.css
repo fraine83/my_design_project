@@ -1377,16 +1377,12 @@ summary {
 }
 
 .product-content {
-  box-sizing: border-box;
-  background-color: #fff;
-  background: var(--whitecolor, #fff);
   border-radius: 15px;
   justify-content: center;
   align-items: center;
   width: 335px;
   height: 364px;
   padding-top: 32px;
-  box-shadow: 0 2px 1px #2e2f4214, 0 1px 1px #2e2f4229, 0 1px 6px #2e2f4214;
 }
 
 @media screen and (width >= 768px) {
@@ -1403,6 +1399,11 @@ summary {
     height: 364px;
     padding-top: 40px;
   }
+}
+
+.product-content {
+  background: var(--whitecolor, #fff);
+  box-shadow: 0 2px 1px #2e2f4214, 0 1px 1px #2e2f4229, 0 1px 6px #2e2f4214;
 }
 
 .swiper-wrapper {
