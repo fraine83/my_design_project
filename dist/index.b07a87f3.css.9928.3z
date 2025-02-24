@@ -143,80 +143,58 @@ html, body {
 }
 
 .landing-header {
-  background: #00000080;
+  background: #0009;
   justify-content: space-between;
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   display: flex;
   position: absolute;
   top: 20px;
 }
 
-.logo2 {
-  color: #faf9f9;
+.landing-header .logo {
+  color: #fff;
   margin-left: 20px;
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
-.login-form {
-  flex-direction: column;
-  gap: 10px;
-  display: flex;
-}
-
-.form-row {
+.landing-header .login-form {
   align-items: center;
   gap: 10px;
+  font-size: 10px;
   display: flex;
 }
 
-.login-form input {
+.landing-header .login-form input {
   border: none;
   border-radius: 5px;
   padding: 5px;
+  font-size: 1rem;
+  line-height: .5;
 }
 
-input {
-  font-size: 15x;
-}
-
-.login-form {
+.landing-header .login-form button {
   color: #fff;
   letter-spacing: .05em;
-  cursor: pointer;
-  border: none;
-  border-radius: 2px;
-  padding: 5px 10px;
-  transition: all .3s;
-  box-shadow: 0 4px 4px #00000026;
-}
-
-button {
-  color: #fff;
   cursor: pointer;
   background: none;
   border: none;
   border-radius: 2px;
-  padding: 5px;
-  font-size: 12px;
+  padding: 5px 10px;
+  line-height: .5;
   transition: all .3s;
   box-shadow: 0 4px 4px #00000026;
 }
 
-button:hover {
+.landing-header .login-form button:hover {
   color: #d2691e;
 }
 
-.form-options {
-  align-items: center;
-  gap: 10px;
-  font-size: .7rem;
-  display: flex;
-}
-
-label {
-  font-size: 12px;
+.landing-header .login-form .forgot-password {
+  color: #fc0;
+  font-size: .7m;
+  margin-left: 10px;
 }
 
 .hero {
@@ -235,19 +213,23 @@ label {
   font-size: 1.2rem;
 }
 
-.signup-link {
+.hero .signup-link {
   color: #fff;
   cursor: pointer;
   background: #f60;
   border: none;
   border-radius: 5px;
-  padding: 5px 20px;
+  padding: 7px 15px;
   font-size: 1.2rem;
   transition: all .3s;
 }
 
-.signup-link:hover {
+.hero .signup-link:hover {
   background: #cc5200;
+}
+
+.hero label.input {
+  height: 8px;
 }
 
 .header-container {

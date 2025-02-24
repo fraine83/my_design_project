@@ -31,7 +31,7 @@
 
 .signup h2 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: #111111;
     font-size: 24px;
     font-weight: 600;
@@ -46,13 +46,16 @@
     color: #111111;
 }
 
-.signup .form-group {
-    margin-bottom: 20px;
+.signup .form-group,
+.form-group1
+{
+    margin-bottom: 15px;
 }
 
 .signup label {
     display: block;
-    margin-bottom: 8px;
+    font-size: 10px;
+    margin-bottom: 4px;
     color: #111111;
     font-weight: 500;
 }
@@ -61,7 +64,7 @@
 .signup input[type="email"],
 .signup input[type="password"] {
     width: 100%;
-    padding: 12px;
+    padding: 5px;
     border: 1px solid #D8D8D8;
     border-radius: 8px;
     font-size: 16px;
@@ -76,12 +79,12 @@
 
 .signup .submit-btn {
     width: 100%;
-    padding: 14px;
+    padding: 4px;
     background-color: #FD9222;
     color: white;
     border: none;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -92,7 +95,7 @@
 }
 
 .signup .form-footer {
-    margin-top: 20px;
+    margin-top: 15px;
     text-align: center;
     color: #111111;
 }
@@ -117,4 +120,13 @@
     outline: none;
     border-color: #FD9222;
     box-shadow: 0 0 0 2px rgba(253, 146, 34, 0.2);
+}
+.term {
+    font-size: 10px;
+}
+.login-btn {
+    padding-left: 100;
+}
+.form-footer {
+    font-size: 12px;
 }

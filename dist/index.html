@@ -17,16 +17,31 @@
   <body>
     <div class="landing-page">
     <header class="landing-header">
-        <div class="logo">Simply Chocolate</div>
+        <div class="logo"><h2 class="logo2">
+            Simply Chocolate
+            <svg width="24" height="24">
+                <use href="/header.4449b2c9.svg#logo-icon"></use>
+            </svg>
+        </h2>
+        
+        </div>
         <form id="loginForm" class="login-form">
-            <input type="email" placeholder="Email" required="">
-            <input type="password" placeholder="Password" required="">
-            <button type="submit"><p class="sign">Sign In</p></button>
-            <label><input type="checkbox"> Keep me signed in</label>
-            <a href="#" class="forgot-password">Forgot password?</a>
+            <div class="form-row">
+                <input type="email" placeholder="Email" required="">
+                <input type="password" placeholder="Password" required="">
+                <button type="submit">
+                        <p cass="sign">
+                        Sign In</p>
+                    </button>
+                </div>
+            <div class="form-options">
+                <label>
+                    <input type="checkbox"> Keep me signed in
+                </label>
+                <a href="#" class="forgot-password">Forgot password?</a>
+            </div>
         </form>
     </header>
-    
     <section class="hero">
         <h1>The Network for Chocolate Lovers</h1>
         <p>Join us and indulge in the finest chocolates worldwide!</p>
@@ -34,7 +49,6 @@
         <button class="signup-link" data-signup-open="">Sign Up</button>
     </section>
 </div>
-
     <div class="signup is-hidden" data-signup=""> 
     <div class="modal-content">
         <span class="close-btn" data-signup-close="">&times;</span> 
@@ -56,10 +70,11 @@
                 <label for="confirmPassword">Confirm Password:</label>
                 <input type="password" id="confirmPassword" required="">
             </div>
-            <div class="form-group">
+            <div class="form-group1">
                 <label class="checkbox-container">
                     <input type="checkbox" id="terms" required="">
-                    I agree to the Terms and Privacy Policy
+                    <p class="term">I agree to the Terms and Privacy Policy
+                    </p>
                 </label>
             </div>
             <button type="submit" class="submit-btn">Create Account</button>
