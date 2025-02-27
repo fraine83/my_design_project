@@ -238,15 +238,15 @@ label {
 .signup-link {
   color: #fff;
   cursor: pointer;
-  background: #f60;
   border: none;
   border-radius: 5px;
   padding: 5px 20px;
-  font-size: 1.2rem;
+  font-size: 14px;
   transition: all .3s;
 }
 
 .signup-link:hover {
+  color: #142828;
   background: #cc5200;
 }
 

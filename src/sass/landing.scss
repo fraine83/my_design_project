@@ -18,7 +18,7 @@ html, body {
     color: #fff;
     text-align: center;
     position: relative; 
-    padding-bottom: 400;
+//     padding-bottom: 300px;
 }
 
 .landing-header {
@@ -117,16 +117,17 @@ label {
 }
 
 .signup-link {
-    background: #ff6600;
+    // background: #ff6600;
     color: white;
     border: none;
     padding: 5px 20px;
-    font-size: 1.2rem;
+    font-size: 14px;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s ease;
 }
 
 .signup-link:hover {
+    color: rgb(20, 40, 40);
     background: #cc5200;
 }

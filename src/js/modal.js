@@ -30,8 +30,14 @@
 
   // Function to close modal when clicking outside the modal content
   const closeModalOnOutsideClick = (event) => {
-    if (event.target.classList.contains("modal") || event.target.classList.contains("login") || event.target.classList.contains("review") || event.target.classList.contains("buynow") || event.target.classList.contains("buynow2") || event.target.classList.contains("subscribe") || event.target.classList.contains("signup")) {
-      event.target.classList.add("is-hidden");
+    if (event.target.classList.contains("modal") || 
+        event.target.classList.contains("login") || 
+        event.target.classList.contains("review") || 
+        event.target.classList.contains("buynow") || 
+        event.target.classList.contains("buynow2") || 
+        event.target.classList.contains("subscribe") || 
+        event.target.classList.contains("signup")) {
+        event.target.classList.add("is-hidden");
     }
   };
 
