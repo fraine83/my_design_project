@@ -1,7 +1,7 @@
 const express = require("express");
 const mysql = require("mysql"); // Use mysql2 if you want `execute()`
 const cors = require("cors");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 require("dotenv").config(); // Load environment variables
 
 const app = express();
