@@ -1,1 +1,13 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+/* Global utility class */
+.is-hidden {
+    display: none !important;
+}
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#main-content {
+    margin-top: 0 !important;
+}

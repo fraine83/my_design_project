@@ -1,13 +1,7 @@
-html, body {
-    height: 100vh;
-    margin: 0;
-    overflow: hidden; /* Completely disables scrolling */
-}
-
 .landing-page {
     height: 100vh;
-    width: 100%; 
-    overflow: hidden; 
+    width: 100%;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,8 +11,14 @@ html, body {
     background-position: center;
     color: #fff;
     text-align: center;
-    position: relative; 
-//     padding-bottom: 300px;
+    position: fixed; /* Changed from relative to fixed */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#landing-container.is-hidden {
+    display: none;
 }
 
 .landing-header {

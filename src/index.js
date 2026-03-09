@@ -8,39 +8,57 @@ document.addEventListener("DOMContentLoaded", () => {
     // Handle login form submission
     // Handle login form submission
     if (loginForm) {
-        loginForm.addEventListener("submit", async (e) => {
-            e.preventDefault();
-            const email = document.querySelector("#loginForm input[type='email']").value;
-            const password = document.querySelector("#loginForm input[type='password']").value;
-    
-            if (!email || !password) {
-                alert("Please fill in both fields");
-                return;
-            }
-    
-            try {
-                const response = await fetch("http://localhost:5000/api/login", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ email, password }),
-                });
-    
-                const data = await response.json();
-    
-                if (response.ok) {
-                    alert("Login successful! Welcome to Simply Chocolate 🍫");
-                    console.log("User data:", data);
-                    document.getElementById("main-content").classList.remove("is-hidden");
-                } else {
-                    alert("Login failed: " + data.error);
+    loginForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const email = document.querySelector("#loginForm input[type='email']").value;
+        const password = document.querySelector("#loginForm input[type='password']").value;
+        
+        if (!email || !password) {
+            alert("Please fill in both fields");
+            return;
+        }
+        
+        try {
+            const response = await fetch("http://localhost:5000/api/login", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ email, password }),
+            });
+            
+            const data = await response.json();
+            
+            if (response.ok) {
+                alert("Login successful! Welcome to Simply Chocolate ");
+                console.log("User data:", data);
+                 // Hide the ENTIRE landing page
+                const landingPage = document.querySelector(".landing-page");
+                console.log("DEBUG: Found landing page:", landingPage);
+                if (landingPage) {
+                landingPage.classList.add("is-hidden");
+                console.log("DEBUG: Hidden landing page");
                 }
-            } catch (error) {
-                alert("Something went wrong. Try again!");
-                console.error("Login Error:", error);
+                const loginModal = document.querySelector("[data-login]");
+                console.log("DEBUG: Found login modal:", loginModal); 
+                if (loginModal) {
+                    loginModal.classList.add("is-hidden");
+                    console.log("DEBUG: Added is-hidden to login modal"); 
+                }
+                const mainContent = document.getElementById("main-content");
+                console.log("DEBUG: Found main content:", mainContent);
+                if (mainContent) {
+                    mainContent.classList.remove("is-hidden");
+                    console.log("DEBUG: Removed is-hidden from main content");
+                    console.log("DEBUG: Main content classes now:", mainContent.className);
+                }
+            } else {
+                alert("Login failed: " + data.error);
             }
-        });
-    }
-
+        } catch (error) {
+            alert("Something went wrong. Try again!");
+            console.error("Login Error:", error);
+        }
+    });
+}
 
     // Show signup modal
     if (signupButton && signupModal) {

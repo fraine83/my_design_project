@@ -1,5 +1,5 @@
 const express = require("express");
-const mysql = require("mysql"); // Use mysql2 if you want `execute()`
+const mysql = require("mysql2"); // Use mysql2 if you want `execute()`
 const cors = require("cors");
 const bcrypt = require("bcryptjs");
 require("dotenv").config(); // Load environment variables
@@ -11,8 +11,8 @@ app.use(cors());
 // Database connection
 const db = mysql.createConnection({
     host: process.env.DB_HOST || "localhost",
-    user: process.env.DB_USER || "ipfrain",
-    password: process.env.DB_PASSWORD || "123@Sold",
+    user: process.env.DB_USER || "root",
+    password: process.env.DB_PASSWORD || "",
     database: process.env.DB_NAME || "simply_chocolate"
 });
 

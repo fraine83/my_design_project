@@ -42,7 +42,7 @@
   };
 
   // Find all modal trigger buttons and attach event listeners
-  const modalTriggers = document.querySelectorAll("[data-login-open], [data-buynow-open], [data-buynow2-open], [data-review-open], [data-signup-open]");
+  const modalTriggers = document.querySelectorAll("[data-login-open], [data-buynow-open], [data-buynow2-open], [data-review-open], [data-signup-open], [data-subscribe-open]");
   modalTriggers.forEach(trigger => {
     trigger.addEventListener("click", openModal);
   });
